@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper_miner"
+version = "0.1.0"
+description = "Paper Miner: LLMs for Lit Review Support"
+authors = [{name = "sbratus", email = "sbratus@ethz.ch"}]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "google-genai",
+    "openai",
+    "numpy",
+    "rich",
+    "bibtexparser",
+    "matplotlib",
+]
+
+[tool.setuptools]
+packages = ["paper_miner"]
+
